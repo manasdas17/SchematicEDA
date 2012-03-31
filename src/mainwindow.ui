@@ -26,7 +26,7 @@
    <bool>false</bool>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>SchematicEDA</string>
   </property>
   <property name="statusTip">
    <string/>
@@ -73,15 +73,15 @@
      <string>File</string>
     </property>
     <addaction name="separator"/>
-    <addaction name="actionNew_2"/>
-    <addaction name="actionOpen_2"/>
+    <addaction name="newAct"/>
+    <addaction name="openAct"/>
     <addaction name="separator"/>
-    <addaction name="actionSave_2"/>
-    <addaction name="actionSave_As"/>
-    <addaction name="actionClose"/>
-    <addaction name="actionClose_All"/>
+    <addaction name="saveAct"/>
+    <addaction name="saveAsAct"/>
+    <addaction name="closeAct"/>
+    <addaction name="closeAllAct"/>
     <addaction name="separator"/>
-    <addaction name="actionExit"/>
+    <addaction name="exitAct"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
@@ -127,7 +127,7 @@
     <property name="title">
      <string>Help</string>
     </property>
-    <addaction name="actionAbout"/>
+    <addaction name="aboutAct"/>
    </widget>
    <widget class="QMenu" name="menuAnalyse">
     <property name="title">
@@ -142,8 +142,8 @@
    <addaction name="menuOptions"/>
    <addaction name="menuView"/>
    <addaction name="menuTools"/>
-   <addaction name="menuHelp"/>
    <addaction name="menuAnalyse"/>
+   <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar">
    <property name="sizePolicy">
@@ -169,12 +169,12 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="actionNew"/>
-   <addaction name="actionOpen"/>
-   <addaction name="actionSave"/>
-   <addaction name="actionCompile_2"/>
+   <addaction name="newBarAct"/>
+   <addaction name="openBarAct"/>
+   <addaction name="saveBarAct"/>
+   <addaction name="compileAct"/>
   </widget>
-  <action name="actionNew">
+  <action name="newBarAct">
    <property name="text">
     <string>New</string>
    </property>
@@ -182,47 +182,62 @@
     <string>New</string>
    </property>
   </action>
-  <action name="actionOpen">
+  <action name="openBarAct">
    <property name="text">
     <string>Open</string>
    </property>
   </action>
-  <action name="actionSave">
+  <action name="saveBarAct">
    <property name="text">
     <string>Save</string>
    </property>
   </action>
-  <action name="actionNew_2">
+  <action name="newAct">
    <property name="text">
     <string>New</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
   </action>
-  <action name="actionOpen_2">
+  <action name="openAct">
    <property name="text">
     <string>Open</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
   </action>
-  <action name="actionSave_2">
+  <action name="saveAct">
    <property name="text">
     <string>Save</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
   </action>
-  <action name="actionSave_As">
+  <action name="saveAsAct">
    <property name="text">
     <string>Save As...</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+S</string>
+   </property>
   </action>
-  <action name="actionClose">
+  <action name="closeAct">
    <property name="text">
     <string>Close</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
   </action>
-  <action name="actionClose_All">
+  <action name="closeAllAct">
    <property name="text">
     <string>Close All</string>
    </property>
   </action>
-  <action name="actionExit">
+  <action name="exitAct">
    <property name="text">
     <string>Exit</string>
    </property>
@@ -277,12 +292,12 @@
     <string>Customize</string>
    </property>
   </action>
-  <action name="actionAbout">
+  <action name="aboutAct">
    <property name="text">
     <string>About</string>
    </property>
   </action>
-  <action name="actionCompile_2">
+  <action name="compileAct">
    <property name="text">
     <string>Compile</string>
    </property>

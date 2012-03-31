@@ -3,9 +3,11 @@
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    QApplication app(argc, argv);
+    app.setOrganizationName("Niktech");
+    app.setApplicationName("SchematicEDA");
+    MainWindow mainWin;
+    mainWin.show();
     
-    return a.exec();
+    return app.exec();
 }
