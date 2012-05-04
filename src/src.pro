@@ -4,4 +4,5 @@ SUBDIRS += \
     app \
     plugins \
     electro-components-lib \
+    core \
     core
