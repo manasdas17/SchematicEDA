@@ -148,8 +148,8 @@ void MainWindow::documentWasModified()
 void MainWindow::readSettings()
 {
     QSettings settings("Niktech", "SchematicEDA");
-    QPoint pos = settings.value("pos", QPoint(200, 200)).toPoint();
-    QSize size = settings.value("size", QSize(1000, 400)).toSize();
+    QPoint pos = settings.value("pos", QPoint(400, 200)).toPoint();
+    QSize size = settings.value("size", QSize(1000, 800)).toSize();
     resize(size);
     move(pos);
 }

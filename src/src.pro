@@ -2,5 +2,6 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     app \
-    libs \
-    plugins
+    plugins \
+    electro-components-lib \
+    core
